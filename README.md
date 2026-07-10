@@ -1,6 +1,3 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Sobia-khalid770/CodeAlpha_HotelManagementSystem/main/logo_banner.png" alt="GrandStay Hotel Reservation System" width="420"/>
-</p>
 
 <h1 align="center">GrandStay — Hotel Reservation System</h1>
 
