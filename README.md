@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Sobia-khalid770/CodeAlpha_HotelManagementSystem/master/GrandStay/logo_banner.png" alt="GrandStay Hotel Reservation System" width="420"/>
+</p>
 
 <h1 align="center">GrandStay — Hotel Reservation System</h1>
 
@@ -23,10 +26,10 @@ Everything runs from a single JAR — no database, no internet connection, no se
 
 ---
 
-## 🖼️ Logo
+## 🖼️ App Icon
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Sobia-khalid770/CodeAlpha_HotelManagementSystem/main/logo_mark_512.png" alt="GrandStay Mark" width="120"/>
+  <img src="https://raw.githubusercontent.com/Sobia-khalid770/CodeAlpha_HotelManagementSystem/master/GrandStay/logo_mark_512.png" alt="GrandStay Mark" width="120"/>
 </p>
 
 > The logo and wordmark are drawn entirely in code using `Graphics2D` in `HotelLogo.java` — no image files are needed at runtime. The PNGs in this repo are exports for reference only.
@@ -103,43 +106,44 @@ java -cp out com.hotel.Main
 
 ```
 CodeAlpha_HotelManagementSystem/
-├── GrandStay-Hotel-Reservation.jar     Prebuilt runnable JAR
-├── logo_banner.png                     Exported wordmark PNG
-├── logo_mark_512.png                   Exported icon PNG
-├── manifest.txt                        JAR manifest
-└── src/com/hotel/
-    │
-    ├── Main.java                       Entry point
-    │
-    ├── model/                          Plain data classes (no Swing, no I/O)
-    │   ├── Room.java                   Room number, type, floor, price, active flag
-    │   ├── RoomType.java               Enum: STANDARD ($79.99) / DELUXE ($129.99) / SUITE ($219.99)
-    │   ├── Guest.java                  Guest full name + contact details
-    │   ├── Reservation.java            Links guest ↔ room ↔ date range ↔ payment
-    │   ├── ReservationStatus.java      Enum: CONFIRMED / CANCELLED / COMPLETED
-    │   ├── Payment.java                Payment method, amount, status, reference
-    │   └── PaymentStatus.java          Enum: PENDING / SUCCESS / FAILED / REFUNDED
-    │
-    ├── service/                        Business logic layer
-    │   ├── HotelService.java           Search, book, cancel, validate
-    │   └── PaymentSimulator.java       Simulates gateway approval / decline
-    │
-    ├── storage/                        Persistence layer
-    │   └── FileStorageManager.java     Reads and writes rooms.csv + reservations.csv
-    │
-    └── ui/                             Swing presentation layer
-        ├── MainFrame.java              Top-level JFrame — header + three-tab layout
-        ├── HeaderPanel.java            Branded banner with logo and tagline
-        ├── HotelLogo.java              Graphics2D logo renderer
-        ├── UITheme.java                Colors, fonts, button and field factories
-        ├── SearchBookPanel.java        Tab 1: room search and booking
-        ├── BookingDialog.java          Multi-step booking dialog
-        ├── PaymentDialog.java          Payment method selection and card entry
-        ├── ReceiptDialog.java          Booking confirmation receipt
-        ├── ManageReservationsPanel.java Tab 2: reservation list and cancellation
-        ├── RoomManagementPanel.java    Tab 3: room inventory management
-        ├── RoomTableModel.java         AbstractTableModel for room data
-        └── ReservationTableModel.java  AbstractTableModel for reservation data
+└── GrandStay/
+    ├── GrandStay-Hotel-Reservation.jar     Prebuilt runnable JAR
+    ├── logo_banner.png                     Exported wordmark PNG
+    ├── logo_mark_512.png                   Exported icon PNG
+    ├── manifest.txt                        JAR manifest
+    └── src/com/hotel/
+        │
+        ├── Main.java                       Entry point
+        │
+        ├── model/                          Plain data classes (no Swing, no I/O)
+        │   ├── Room.java                   Room number, type, floor, price, active flag
+        │   ├── RoomType.java               Enum: STANDARD ($79.99) / DELUXE ($129.99) / SUITE ($219.99)
+        │   ├── Guest.java                  Guest full name + contact details
+        │   ├── Reservation.java            Links guest ↔ room ↔ date range ↔ payment
+        │   ├── ReservationStatus.java      Enum: CONFIRMED / CANCELLED / COMPLETED
+        │   ├── Payment.java                Payment method, amount, status, reference
+        │   └── PaymentStatus.java          Enum: PENDING / SUCCESS / FAILED / REFUNDED
+        │
+        ├── service/                        Business logic layer
+        │   ├── HotelService.java           Search, book, cancel, validate
+        │   └── PaymentSimulator.java       Simulates gateway approval / decline
+        │
+        ├── storage/                        Persistence layer
+        │   └── FileStorageManager.java     Reads and writes rooms.csv + reservations.csv
+        │
+        └── ui/                             Swing presentation layer
+            ├── MainFrame.java              Top-level JFrame — header + three-tab layout
+            ├── HeaderPanel.java            Branded banner with logo and tagline
+            ├── HotelLogo.java              Graphics2D logo renderer
+            ├── UITheme.java                Colors, fonts, button and field factories
+            ├── SearchBookPanel.java        Tab 1: room search and booking
+            ├── BookingDialog.java          Multi-step booking dialog
+            ├── PaymentDialog.java          Payment method selection and card entry
+            ├── ReceiptDialog.java          Booking confirmation receipt
+            ├── ManageReservationsPanel.java Tab 2: reservation list and cancellation
+            ├── RoomManagementPanel.java    Tab 3: room inventory management
+            ├── RoomTableModel.java         AbstractTableModel for room data
+            └── ReservationTableModel.java  AbstractTableModel for reservation data
 ```
 
 **23 Java files · ~3,800 lines of code · 0 external dependencies**
