@@ -26,7 +26,7 @@ Everything runs from a single JAR — no database, no internet connection, no se
 
 ---
 
-##  App Icon
+## ✨ App Icon
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/Sobia-khalid770/CodeAlpha_HotelManagementSystem/master/GrandStay/logo_mark_512.png" alt="GrandStay Mark" width="120"/>
